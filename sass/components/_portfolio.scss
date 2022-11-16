@@ -18,9 +18,7 @@
   background-color: #f5f4fa;
   color: var(--main-color);
 
-  transition-property: background-color, box-shadow, color;
-  
-  @include transition;
+  @include transition(background-color, box-shadow, color);
 
   &:hover,
   &:focus {
@@ -38,9 +36,8 @@
 
   &-item {
     width: calc((100% - 60px) / 3);
-    transition-property: box-shadow;
-    
-    @include transition;
+
+    @include transition(box-shadow);
   }
 
   &-item:hover .works-example-text-top {

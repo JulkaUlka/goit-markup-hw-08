@@ -14,9 +14,7 @@
   color: #ffffff;
   background-color: var(--brand-color);
 
-  transition-property: background-color;
-
-  @include transition;
+  @include transition(background-color);
 
   &:hover,
   &:focus {

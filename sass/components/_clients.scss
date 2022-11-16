@@ -12,9 +12,8 @@
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition-property: color, border;
 
-  @include transition;
+  @include transition(color, border);
 
   &:hover,
   &:focus {

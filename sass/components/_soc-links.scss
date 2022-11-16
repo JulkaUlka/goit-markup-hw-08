@@ -1,4 +1,6 @@
 .social-contact-link {
+  @include transition(background-color, color);
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,10 +8,6 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition-property: background-color, color;
-  
-
-  @include transition;
 
   &:hover,
   &:focus {

@@ -5,7 +5,8 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms linear, visibility 250ms linear;
+
+  @include transition(opacity, visibility);
 
   &.is-hidden {
     visibility: hidden;
@@ -28,7 +29,7 @@
   border-radius: 4px;
 
   transform: translate(-50%, -50%);
-  transition: transform 200ms ease-in;
+  @include transition(transform);
 }
 
 .backdrop.is-hidden .modal {
@@ -50,10 +51,8 @@
   border: 1px solid #afb1b8;
   background-color: #ffffff;
 
-  transition-property: fill;
-  
-  @include transition;
-  
+  @include transition(fill);
+
   &:hover,
   &:focus {
     fill: var(--brand-color);
@@ -94,9 +93,7 @@
   border-radius: 4px;
   outline: transparent;
 
-  transition-property: border;
-  
-  @include transition;
+  @include transition(border);
 
   &:focus {
     border: 1px solid var(--brand-color);
@@ -113,9 +110,7 @@
   left: 12px;
   transform: translateY(-50%);
 
-  transition-property: fill;
- 
-  @include transition;
+  @include transition(fill);
 }
 
 .register-form-agreement {
@@ -141,9 +136,8 @@
 
 .uncheck {
   opacity: 1;
-  transition-property: opacity;
-  
-  @include transition;
+
+  @include transition(opacity);
 }
 
 .register-form-checkbox:checked + .register-form-checkbox-icon .uncheck {
@@ -153,9 +147,8 @@
 .check {
   cursor: pointer;
   opacity: 0;
-  transition-property: opacity;
 
-  @include transition;
+  @include transition(opacity);
 }
 
 .register-form-checkbox:checked + .register-form-checkbox-icon .check {

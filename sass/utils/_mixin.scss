@@ -1,4 +1,5 @@
-@mixin transition($td: 250ms, $tt: cubic-bezier(0.4, 0, 0.2, 1)){   
-        transition-duration: $td;
-        transition-timing-function: $tt;
+@mixin transition($params...) {
+  transition-property: $params;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
