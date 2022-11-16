@@ -1,0 +1,104 @@
+.footer-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+}
+
+.footer {
+  background-color: var(--bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.adress {
+  margin-top: 20px;
+  font-style: normal;
+}
+
+.adress li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-link--adress {
+  color: #ffffff;
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
+}
+
+.footer-link--contact {
+  color: rgba(255, 255, 255, 0.6);
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
+}
+
+.join {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer--social-contact-link {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon {
+  fill: currentColor;
+}
+.mailing {
+  margin-left: 23px;
+  &-wrap {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  &-input {
+    display: block;
+    padding: 15px 16px;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    background-color: transparent;
+  }
+}
+
+.btn--subscribe {
+  width: 200px;
+  position: relative;
+  padding: 10px 62px 10px 28px;
+}
+
+.send {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+
+  fill: currentColor;
+}
