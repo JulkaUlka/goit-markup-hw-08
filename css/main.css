@@ -589,10 +589,10 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 40px;
+  padding: 20px;
   overflow: auto;
-  min-width: 450px;
-  min-height: 609px;
+  min-width: 300px;
+  min-height: 597px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -600,6 +600,13 @@ button {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+    padding: 40px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
