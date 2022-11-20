@@ -100,6 +100,19 @@
     margin-right: 10px;
   }
 }
+.envelope {
+  @media screen and(max-width: 1199px) {
+    width: 14px;
+    height: 10px;
+  }
+}
+.phone {
+  @media screen and(max-width: 1199px) {
+    width: 10px;
+    height: 14px;
+  }
+}
+
 .navigation-link {
   position: relative;
   padding: 32px 0;

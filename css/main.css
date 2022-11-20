@@ -205,7 +205,7 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .features__title {
     text-align: center;
   }
@@ -232,7 +232,8 @@ button {
   .footer-wrap {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -247,12 +248,6 @@ button {
   background-color: var(--bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .adress-wrap {
-    margin-right: 105px;
-  }
 }
 
 .adress {
@@ -338,12 +333,18 @@ button {
   display: block;
   padding: 15px 16px;
   max-width: 450px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.25;
   letter-spacing: 0.03em;
   background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .mailing-input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .mailing-input {
@@ -469,6 +470,20 @@ button {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 1199px) {
+  .envelope {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .phone {
+    width: 10px;
+    height: 14px;
+  }
+}
+
 .navigation-link {
   position: relative;
   padding: 32px 0;
@@ -505,6 +520,7 @@ button {
 .hero-section {
   max-width: 480px;
   padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--bg-color);
@@ -512,31 +528,31 @@ button {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../images/hero1px-mob.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero1px-mob.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url(../images/hero2px-mob.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero2px-mob.jpg);
   }
 }
 @media screen and (min-width: 481px) {
   .hero-section {
-    background-image: url(../images/hero1px-tab.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero1px-tab.jpg);
   }
 }
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url(../images/hero2px-tab.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero2px-tab.jpg);
   }
 }
 @media screen and (min-width: 769px) {
   .hero-section {
-    background-image: url(../images/bg_image.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg_image.jpg);
   }
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url(../images/bg_img_2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg_img_2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
